@@ -10,10 +10,10 @@
 <style>
     
     .he{
-        border: 3px dashed purple ;
+        border: 3px solid violet ;
         color: rgb(199, 193, 193);
-        background-color: purple;
-        height:50px;
+        background-color: rgb(244, 10, 244);
+        height:100px;
 
     }
     .F{
@@ -28,7 +28,13 @@
     #man{
         color: rgb(237, 225, 225);
         border: 2px solid violet;
-        background-color: violet;
+        background-color: purple;
+    }
+    #sa{
+        height: 300px;
+        float: left;
+        width:45%
+       
     }
     @media only screen and (maxwidth:500px){
 
@@ -38,20 +44,47 @@
         background-color: rgb(218, 210, 210);
         color:rgb(218, 210, 210) ;
     }
+    #form{
+        padding-left: 10px;
+        border: 2px solid grey;
+        box-shadow: 2px 2px 3px 6px purple;
+    }
+    #dumb{
+        height: 300px;
+        width: 45%;
+        padding-left: 15px;
+        float:left;
+    }
+    #B{
+        height:100px;
+        width:12%;
+        float: right;
+    }
+    #A{
+        height: 100px;
+        width: 12%;
+        float:right;
+    }
     
   </style>
 <body>
-    
-    <h1 class="he">Hult Prize At IIT KHARAGPUR  </h1>
+    <div class="he">
+<img src="irclogo.png" id="A"/>
+          <img src="kgplogo.png" id="B"/>
+          <h1 >Hult Prize At IIT KHARAGPUR  </h1> 
+          
+    </div>
+ 
+
     <h2>Hult Prize OnCampus Round 2022</h2>
     <hr>
-     <form>
+     <form id="form">
      <p>Team Name</p>
      <input type="text" id="name" required>
      <p>Name of the Team's Leader</p>
     <input type="text" id="names" required>
     <p>Email ID of Team Leader</p>
-    
+
     <input type="email" id="email" required>
     <p>Contact No.</p>
     <input type="number" id="no." required>
@@ -59,8 +92,8 @@
     <input type="file" id="file" required>
     <br><br><br>
 
-    <input type="submit" style="color: skyblue;">
-
+    <input type="submit" style="color: darkblue;">
+<br><br>
      </form>
      <br><br>
      <div id="man">
@@ -69,6 +102,10 @@
              IIT Kharagpur 
      </h2>
     </div>
+    <br>
+    <br>
+    <img src="IRC.jpeg" style="align-items: center;" id="sa"/>
+    <img src="mainkgp.png" id="dumb">
 
 </body>
 </html>
